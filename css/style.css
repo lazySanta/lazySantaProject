@@ -1,1 +1,29 @@
-/* here will be the CSS code for web Santa */
+*{font-family: 'Mountains of Christmas', cursive;}
+legend{font-family: 'Mountains of Christmas', cursive;}
+a{
+  font-family: 'Mountains of Christmas', cursive;
+}
+.logo {
+  height: 1em;
+  width: 1em;
+}
+footer{
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 1em;
+}
+h1{
+  text-transform: capitalize;
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 2em;
+  align-content: center;
+  margin: 10px;
+  text-align: center;
+}
+.santa{
+  height: 10em;
+  width: 14em;
+}
+.qmark{
+  height: 6em;
+  width: 6em;
+}
