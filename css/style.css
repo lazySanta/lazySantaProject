@@ -1,19 +1,27 @@
 *{font-family: 'Mountains of Christmas', cursive;}
-legend{font-family: 'Mountains of Christmas', cursive;}
-a{
+.xmas_font{
   font-family: 'Mountains of Christmas', cursive;
+  text-transform: capitalize;
+}
+button{
+  font-family: 'Mountains of Christmas', cursive;
+  text-transform: capitalize;
+  font-size: 30px;
 }
 .logo {
   height: 1em;
   width: 1em;
 }
 footer{
-  font-family: 'Mountains of Christmas', cursive;
   font-size: 1em;
+  text-align: right;
 }
 h1{
-  text-transform: capitalize;
-  font-family: 'Mountains of Christmas', cursive;
+  font-size: 3em;
+  margin: 10px;
+  text-align: center;
+}
+h2{
   font-size: 2em;
   align-content: center;
   margin: 10px;
@@ -26,4 +34,26 @@ h1{
 .qmark{
   height: 6em;
   width: 6em;
+}
+#clockdiv{
+  font-size: 1em;
+  text-transform: uppercase;
+  align-content: center;
+  margin: 10px;
+  text-align: center;
+}
+button{
+  font-size: 20px;
+  background-color: #B6244F;
+  color: #BFADA3;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+}
+button:hover{
+  background-color: black;
+  color: #4281A4;
+  font-size: 30px;
 }
