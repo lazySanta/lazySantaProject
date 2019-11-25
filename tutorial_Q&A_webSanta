@@ -1,0 +1,57 @@
+tutorial+Q&A for webSanta Game
+
+Would you like to learn some HTML?
+HTML is easy to learn - enjoy the process by playing Web Santa game!
+
+
+tutorial 1
+HTML, an acronym for HyperText Markup Language
+HTML is the standard markup language for Web pages.
+Computer language HTML will enable you to create your own Website.
+q1
+What does the acronym HTML stands for?
+a: HypnoText Make-up language
+b: HyperText Making language
+c: HyperText Markup Language - correct
+
+tutorial 2
+HTML was first developed by British physicist Tim Berners-Lee in 1990.
+For creating web pages in HTML, you need an HTML editor.
+For creating HTML you need basic building blocks:
+  -tag, attribute, element
+q2
+Which year was the first version of HTML developed?
+a: 1999
+b: 1990 - correct
+c: 2009
+
+tutorial 3
+TAGS: -Tags separate normal text from HTML code.
+      -Tags are contained in less than "<" and greater than ">" angle brackets.
+      -Almost every open tag must be closed,
+      for example tag for bold format is <b></b>,
+      but there are exceptions such as line break <br>.
+      -Tag for hyperlink is href.
+      -Every HTML file begins with opening tag <html>
+      and closing tag </html>
+      -Most of the HTML pages start with <!DOCTYPE html>
+q3
+Which type of brackets are used for TAGS in HTML?
+a: <> - correct
+b: {}
+c: []
+
+tutorial 4
+ATTRIBUTES & ELEMENTS:
+            - ATTRIBUTES are used to define the characteristics of an element
+            - ATTRIBUTES are used inside the opening tag of the element
+            - ATTRIBUTES are made up of a name and value,
+            the value is placed inside a quotation mark
+            <tag attribute="value">your text</tag>
+            ELEMENTS: -consist of the opening and closing tag
+            as well as the content between the tags.
+q4
+Where would look for ATTRIBUTES in your HTML code?
+a: inside the closing tag of an element
+b: outside the opening tag of an element
+c: inside the opening tag of an element - correct
