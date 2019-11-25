@@ -3,28 +3,18 @@
   font-family: 'Mountains of Christmas', cursive;
   text-transform: capitalize;
 }
-button{
-  font-family: 'Mountains of Christmas', cursive;
-  text-transform: capitalize;
-  font-size: 30px;
-}
-.logo {
-  height: 1em;
-  width: 1em;
-}
-footer{
-  font-size: 1em;
-  text-align: right;
-}
+
 h1{
   font-size: 3em;
-  margin: 10px;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
   text-align: center;
 }
 h2{
   font-size: 2em;
   align-content: center;
-  margin: 10px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   text-align: center;
 }
 .santa{
@@ -36,13 +26,16 @@ h2{
   width: 6em;
 }
 #clockdiv{
-  font-size: 1em;
+  font-size: 1.5em;
   text-transform: uppercase;
-  align-content: center;
-  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1em;
   text-align: center;
 }
 button{
+  font-family: 'Mountains of Christmas', cursive;
+  text-transform: capitalize;
   font-size: 20px;
   background-color: #B6244F;
   color: #BFADA3;
@@ -51,9 +44,41 @@ button{
   border-radius: 20px;
   cursor: pointer;
   float: right;
+  margin-right: 2em;
 }
 button:hover{
   background-color: black;
   color: #4281A4;
   font-size: 30px;
+}
+.flex_form{
+  font-size: 2em;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  text-align: center;
+}
+input[type=text]{
+  font-size: 1em;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper{
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+.footer, .push{
+  height: 50px;
+}
+.logo {
+  height: 1em;
+  width: 1em;
+}
+footer{
+  font-size: 1em;
+  text-align: right;
 }
