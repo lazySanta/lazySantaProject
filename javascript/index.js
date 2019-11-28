@@ -1,7 +1,9 @@
 // here will be the JS code for web Santa
 
 
+
 // code for clockdiv elemnet - countown to xmas
+
 var deadline = 'December 25 2019';
 
 function getTimeRemaining(endtime){
@@ -34,3 +36,18 @@ function initializeClock(id, endtime){
 }
 
 initializeClock('clockdiv', deadline);
+
+
+
+
+
+
+// code for players name form which will display on the second page //
+
+function processForm(){
+    var parameters = location.search.substring(1).split("&");
+    var temp = parameters[0].split("=");
+    l = unescape(temp[1]);
+    document.getElementById("data").innerHTML = l;
+}
+processForm();

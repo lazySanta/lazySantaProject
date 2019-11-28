@@ -82,3 +82,11 @@ footer{
   font-size: 1em;
   text-align: right;
 }
+
+#data{
+  color: #FE938C;
+  /* text-align: center;
+  font-size: 3em; */
+  text-transform: capitalize;
+  /* margin-top: 3em;  */
+}
