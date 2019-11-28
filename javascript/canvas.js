@@ -28,7 +28,7 @@ function draw (ctx,image) {
 }
 
 var image = new Image();
-image.src = '../lazySantaProject/images/temporarySanta.jpg'
+image.src = '../lazySantaProject/images/elements/santa_catching.png'
 draw(ctx,image);
 
 function santaMoving(e) {
