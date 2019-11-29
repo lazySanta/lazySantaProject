@@ -1,10 +1,6 @@
 // here will be the JS code for web Santa
 
 
-
-
-
-
 // code for players name form which will display on the second page //
 
 function processForm(){
