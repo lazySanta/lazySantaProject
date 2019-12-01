@@ -81,7 +81,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
                 numCorrect++;
 
 //inpit code for jump to another page instead change color
-document.location.href = "correct.html";
+document.location.href = "correct.html?question=3";
 
                 // color the answers green
                 // answerContainers[i].style.color = 'green';
