@@ -13,9 +13,19 @@ var state = {
     x: 100,
     y: 50,
     speed: 5,
-  }
+  },
+  question: 1,
 };
+// get the parameters from URL and set the state
+function parseParameters() {
+  var searchParams = new URLSearchParams(location.search);
 
+  if (searchParams.has("question")) {
+    state.question = searchParams.get("question")
+  }
+}
+parseParameters();
+// canvas
 function drawBackground (ctx,background) {
   if (!background.complete) {
     setTimeout(function(){
@@ -87,6 +97,16 @@ function animate() {
     drawPresent(ctx, presentImage);
     drawSanta(ctx, image);
     presentFall();
+
+    // added fake collision check
+    checkCollision();
 };
+
+//
+function checkCollision() {
+  if (state.presents.y > 600) {
+    window.location.assign(`q${state.question}.html`);
+  }
+}
 
 setInterval(animate, 50);
