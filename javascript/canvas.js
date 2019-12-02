@@ -18,8 +18,19 @@ var state = {
     y: 50,
     speed: 3,
   }
+  },
+  question: 1,
 };
+// get the parameters from URL and set the state
+function parseParameters() {
+  var searchParams = new URLSearchParams(location.search);
 
+  if (searchParams.has("question")) {
+    state.question = searchParams.get("question")
+  }
+}
+parseParameters();
+// canvas
 function drawBackground (ctx,background) {
   if (!background.complete) {
     setTimeout(function(){
@@ -105,3 +116,10 @@ function checkCollisions(){
       {console.log("present caught")
       // death()
   } };
+
+    // collision check
+function checkCollision() {
+  if (state.presents.y > 600) {
+    window.location.assign(`q${state.question}.html`);
+  }
+}
