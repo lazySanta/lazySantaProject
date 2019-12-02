@@ -16,7 +16,7 @@ var state = {
   presents: {
     x: randomPosition(1, canvas.width),
     y: 50,
-    speed: 5,
+    speed: 3,
   }
 };
 
@@ -58,8 +58,7 @@ function santaMoving(e) {
     if (e.code==="ArrowLeft") {state.santa.x-=5;
     } else if(e.code==="ArrowRight") {state.santa.x+=5;
     }
-    drawBackground();
-    drawSanta(ctx,image);
+      drawSanta(ctx,image);
   };
 body.addEventListener("keydown", santaMoving);
 
@@ -91,6 +90,18 @@ function animate() {
     drawPresent(ctx, presentImage);
     drawSanta(ctx, image);
     presentFall();
+    checkCollisions();
 };
 
-setInterval(animate, 50);
+setInterval(animate, 40);
+
+
+function checkCollisions(){
+    if (
+      state.presents.y >= state.santa.y &&
+      state.presents.y < canvas.height &&
+      state.presents.x < state.santa.x+190 &&
+      state.presents.x > state.santa.x-190)
+      {console.log("present caught")
+      // death()
+  } };
