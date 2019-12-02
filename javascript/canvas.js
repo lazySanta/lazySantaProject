@@ -17,7 +17,6 @@ var state = {
     x: randomPosition(1, canvas.width),
     y: 50,
     speed: 3,
-  }
   },
   question: 1,
 };
@@ -114,12 +113,12 @@ function checkCollisions(){
       state.presents.x < state.santa.x+190 &&
       state.presents.x > state.santa.x-190)
       {console.log("present caught")
-      // death()
+      window.location.assign(`q${state.question}.html`)
   } };
 
     // collision check
-function checkCollision() {
-  if (state.presents.y > 600) {
-    window.location.assign(`q${state.question}.html`);
-  }
-}
+// function checkCollision() {
+//   if (state.presents.y > 600) {
+//     window.location.assign(`q${state.question}.html`);
+//   }
+// }
