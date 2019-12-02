@@ -4,13 +4,17 @@ canvas.height = window.innerHeight;
 
 var ctx = canvas.getContext("2d");
 
+function randomPosition(min, max) {
+  return Math.floor(Math.random() * (max - min) ) + min;
+}
+
 var state = {
   santa: {
     x: canvas.width / 2,
     y: canvas.height *2/3,
   },
   presents: {
-    x: 100,
+    x: randomPosition(1, canvas.width),
     y: 50,
     speed: 5,
   },
