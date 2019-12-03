@@ -114,7 +114,11 @@ function checkCollisions(){
       state.presents.x > state.santa.x-190)
       {console.log("present caught")
       window.location.assign(`q${state.question}.html`)
-  } };
+  } else if (state.presents.y > canvas.height) {
+    state.presents.y = 0
+     state.presents.x = randomPosition(1, canvas.width)
+  }
+};
 
 //setTimer before window.location.assign!!!!!!!
 //have a src of sound anywhere in the code
