@@ -17,7 +17,6 @@ var state = {
     x: randomPosition(1, canvas.width),
     y: 50,
     speed: 3,
-  }
   },
   question: 1,
 };
