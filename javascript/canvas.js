@@ -116,6 +116,10 @@ function checkCollisions(){
       window.location.assign(`q${state.question}.html`)
   } };
 
+//setTimer before window.location.assign!!!!!!!
+//have a src of sound anywhere in the code
+
+
     // collision check
 // function checkCollision() {
 //   if (state.presents.y > 600) {
