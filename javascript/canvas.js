@@ -20,6 +20,7 @@ var state = {
   },
   question: 1,
 };
+
 // get the parameters from URL and set the state
 function parseParameters() {
   var searchParams = new URLSearchParams(location.search);
@@ -105,6 +106,8 @@ function animate() {
 
 setInterval(animate, 40);
 
+var mySound = new Audio("../lazySantaProject/sounds/catching_gift_sound.wav");
+
 
 function checkCollisions(){
     if (
@@ -112,13 +115,20 @@ function checkCollisions(){
       state.presents.y < canvas.height &&
       state.presents.x < state.santa.x+190 &&
       state.presents.x > state.santa.x-190)
-      {console.log("present caught")
-      window.location.assign(`q${state.question}.html`)
+      {console.log("present caught");
+      mySound.play();
+      setTimeout(function() { delayed(); }, 1000);
+
+      function delayed () {window.location.assign(`q${state.question}.html`)}
   } else if (state.presents.y > canvas.height) {
     state.presents.y = 0
      state.presents.x = randomPosition(1, canvas.width)
   }
 };
+
+//setTimer before window.location.assign!!!!!!!
+//have a src of sound anywhere in the code
+
 
     // collision check
 // function checkCollision() {
