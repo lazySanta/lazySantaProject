@@ -41,7 +41,7 @@ main{
 }
 
 p{
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-top: 0.5em;
   margin-left: 0.5em;
   text-align: left;
@@ -94,92 +94,9 @@ button:hover{
 }
 
 img{
-  margin: 0.02%;
-  height: 170px;
-}
-
-@media (max-width: 800px) {
-  img{
-    margin: 1.5%;
-    height: 130px;
-  }
-  button{
-    font-size: 1.5em;
-    background-color: #45DCFF;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 20px;
-    font-family: 'Mosk Semi-Bold 600';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Mosk Semi-Bold 600'), url('Mosk Semi-Bold 600.woff') format('woff');
-    color: #26153D;
-    text-align: center;
-  }
-  h1{
-    font-size: 3.5em;
-    margin-top: 0.2em;
-    text-align: center;
-    font-family: 'Mosk Semi-Bold 600';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Mosk Semi-Bold 600'), url('Mosk Semi-Bold 600.woff') format('woff');
-    color: #C9EAFF;
-  }
-  p{
-    font-size: 1.2em;
-    margin-top: 0.3em;
-    margin-left: 0.3em;
-    text-align: left;
-    line-height: 130%;
-    font-family: 'Mosk Semi-Bold 600';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Mosk Semi-Bold 600'), url('Mosk Semi-Bold 600.woff') format('woff');
-    color: #C9EAFF;
-  }
-}
-
-  @media (max-width: 500px) {
-    img{
-      margin: 1.5%;
-      height: 100px;
-    }
-    button{
-      font-size: 1em;
-      background-color: #45DCFF;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 20px;
-      font-family: 'Mosk Semi-Bold 600';
-      font-style: normal;
-      font-weight: normal;
-      src: local('Mosk Semi-Bold 600'), url('Mosk Semi-Bold 600.woff') format('woff');
-      color: #26153D;
-      text-align: center;
-    }
-    h1{
-      font-size: 2.5em;
-      margin-top: 0.2em;
-      text-align: center;
-      font-family: 'Mosk Semi-Bold 600';
-      font-style: normal;
-      font-weight: normal;
-      src: local('Mosk Semi-Bold 600'), url('Mosk Semi-Bold 600.woff') format('woff');
-      color: #C9EAFF;
-    }
-    p{
-      font-size: 0.9em;
-      margin-top: 0.2em;
-      margin-left: 0.2em;
-      text-align: left;
-      line-height: 130%;
-      font-family: 'Mosk Semi-Bold 600';
-      font-style: normal;
-      font-weight: normal;
-      src: local('Mosk Semi-Bold 600'), url('Mosk Semi-Bold 600.woff') format('woff');
-      color: #C9EAFF;
-    }
+  margin: 1.5%;
+  text-align: right;
+  height: 200px;
 }
 
 /* /code for keeping footer at the bottom of the page// */
