@@ -4,6 +4,20 @@ canvas.height = window.innerHeight;
 
 var ctx = canvas.getContext("2d");
 
+
+//for touch on mobile
+document.addEventListener("touchstart", touchHandler);
+document.addEventListener("touchmove", touchHandler);
+
+function touchHandler(e) {
+  e.preventDefault();
+
+  if(e.touches){
+    state.santa.x = e.touches[0].pageX - canvas.offsetLeft - state.santa.x / 2;
+  }
+}
+
+
 function randomPosition(min, max) {
   return Math.floor(Math.random() * (max - min) ) + min;
 }
@@ -69,9 +83,11 @@ function santaMoving(e) {
     if (e.code==="ArrowLeft") {state.santa.x-=5;
     } else if(e.code==="ArrowRight") {state.santa.x+=5;
     }
+
       drawSanta(ctx,image);
   };
 body.addEventListener("keydown", santaMoving);
+
 
 // draw Presents
 
@@ -106,6 +122,8 @@ function animate() {
 
 setInterval(animate, 40);
 
+
+
 var mySound = new Audio("../lazySantaProject/sounds/catching_gift_sound.wav");
 
 
@@ -125,14 +143,3 @@ function checkCollisions(){
      state.presents.x = randomPosition(1, canvas.width)
   }
 };
-
-//setTimer before window.location.assign!!!!!!!
-//have a src of sound anywhere in the code
-
-
-    // collision check
-// function checkCollision() {
-//   if (state.presents.y > 600) {
-//     window.location.assign(`q${state.question}.html`);
-//   }
-// }
