@@ -73,28 +73,6 @@ input[type=text]{
 }
 
 
-/* /code for keeping footer at the bottom of the page// */
-
-html, body {
-  height: 100%;
-  margin: 0;
-}
-.wrapper{
-  min-height: 100%;
-  margin-bottom: -50px;
-}
-.footer, .push{
-  height: 50px;
-}
-.logo {
-  height: 1em;
-  width: 1em;
-}
-footer{
-  font-size: 1em;
-  text-align: right;
-}
-
 #data{
   color: #FE938C;
   text-transform: capitalize;

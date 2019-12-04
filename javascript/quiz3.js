@@ -39,7 +39,8 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
                 answers.push(
                     '<label>'
                         + '<input type="radio" name="question'+i+'" value="'+letter+'">'
-                        + letter + ': '
+                        // + letter
+                        + ' '
                         + questions[i].answers[letter]
                     + '</label>'
                 );
@@ -77,19 +78,14 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
                 // add to the number of correct answers
                 numCorrect++;
 
-//inpit code for jump to another page instead change color
-document.location.href = "game_over.html";
-
-                // color the answers green
-                // answerContainers[i].style.color = 'green';
+            //inpit code for jump to another page instead change color
+            document.location.href = "game_over.html";
             }
 
             // if answer is wrong or blank
             else{
 
-document.location.href = "wrong.html"
-                // color the answers red
-                // answerContainers[i].style.color = 'red';
+            document.location.href = "wrong.html"
             }
         }
 
