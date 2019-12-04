@@ -7,7 +7,7 @@ body{
   background-image: url("../images/elements/background_web.png");
   background-position: center center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
   width: 100%;
@@ -16,7 +16,7 @@ body{
   align-items: center;
   top: 0;
   left: 0;
-  /* will-change: transform; */
+  will-change: transform;
   z-index: -1;
 }
 
@@ -28,21 +28,8 @@ h1{
   color: #C9EAFF;
 }
 
-main{
-  margin: 1em;
-}
 
-p{
-  font-size: 1.5em;
-  margin-top: 0.5em;
-  margin-left: 0.5em;
-  text-align: left;
-  line-height: 130%;
-  font-family: 'Roboto', sans-serif;
-  color: #C9EAFF;
-}
-
-button{
+#continue{
   font-size: 2em;
   background-color: #45DCFF;
   padding: 12px 20px;
@@ -51,9 +38,10 @@ button{
   font-family: 'Roboto', sans-serif;
   color: #26153D;
   text-align: center;
+  text-decoration: none;
 }
 
-button:hover{
+#continue:hover{
   background-color: #26153D;
   color: #45DCFF;
 }
@@ -61,7 +49,7 @@ button:hover{
 .container{
   display: flex;
   width: 80%;
-  height: 80%;
+  height: 40%;
   background: #182145;
   border: 20px;
   border-style: solid;
@@ -77,20 +65,15 @@ button:hover{
 }
 
 img{
-  margin: 0.02%;
-  height: 170px;
-  opacity: 1;
+  margin: 5%;
+  height: 300px;
 }
 
-.santa_container{
+.grinch{
   display: flex;
   width: 80%;
-  height: 15%;
-  background-color: rgba(0,0,0,.0);
-  margin: auto;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 @media (max-width: 800px) and (orientation:portrait){
@@ -104,10 +87,10 @@ img{
    background-image: url("../images/elements/background_web.png") 0 0 repeat;
   }
   img{
-    margin: 1.5%;
-    height: 130px;
+    margin: 5%;
+    height: 200px;
   }
-  button{
+  #continue{
     font-size: 1.5em;
     background-color: #45DCFF;
     padding: 12px 20px;
@@ -124,20 +107,12 @@ img{
     font-family: 'Roboto', sans-serif;
     color: #C9EAFF;
   }
-  p{
-    font-size: 1.2em;
-    margin-top: 0.3em;
-    margin-left: 0.3em;
-    text-align: left;
-    line-height: 130%;
-    font-family: 'Roboto', sans-serif;
-    color: #C9EAFF;
-  }
 }
 
 /* the background isn't rotating yet :( */
   @media (max-width: 500px) and (orientation:portrait){
     body {
+     display: block;
      height: 100vw;
      -webkit-transform: rotate(90deg);
      -moz-transform: rotate(90deg);
@@ -145,13 +120,12 @@ img{
      -ms-transform: rotate(90deg);
      transform: rotate(90deg);
      background-image: url("../images/elements/background_web.png") 0 0 repeat;
-
     }
     img{
-      margin: 1.5%;
-      height: 100px;
+      margin: 5%;
+      height: 150px;
     }
-    button{
+    #continue{
       font-size: 1em;
       background-color: #45DCFF;
       padding: 12px 20px;
@@ -168,34 +142,7 @@ img{
       font-family: 'Roboto', sans-serif;
       color: #C9EAFF;
     }
-    p{
-      font-size: 0.9em;
-      margin-top: 0.2em;
-      margin-left: 0.2em;
-      text-align: left;
-      line-height: 130%;
-      font-family: 'Roboto', sans-serif;
-    }
 }
-/*
-body { display:block; }
-@media only screen and (orientation:portrait){
-  body {
-   height: 100vw;
-   -webkit-transform: rotate(90deg);
-   -moz-transform: rotate(90deg);
-   -o-transform: rotate(90deg);
-   -ms-transform: rotate(90deg);
-   transform: rotate(90deg);
-  }
-}
-
-@media only screen and (orientation:landscape){
-  body {
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  }
-} */
 
 /* /code for keeping footer at the bottom of the page// */
 /*

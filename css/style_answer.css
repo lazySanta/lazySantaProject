@@ -1,11 +1,6 @@
-@font-face {
-font-family: 'Mosk Semi-Bold 600';
-font-style: normal;
-font-weight: normal;
-src: local('Mosk Semi-Bold 600'), url('Mosk Semi-Bold 600.woff') format('woff');
-color: #C9EAFF;
+*{
+  font-family: 'Roboto', sans-serif;
 }
-span.font6{font-family:"mosk-semi-bold-600";font-size:55px;text-transform:none;}
 
 body{
   display: flex;
@@ -29,45 +24,24 @@ h1{
   font-size: 5em;
   margin-top: 0.2em;
   text-align: center;
-  font-family: 'Mosk Semi-Bold 600';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Mosk Semi-Bold 600'), url('Mosk Semi-Bold 600.woff') format('woff');
+  font-family: 'Roboto', sans-serif;
   color: #C9EAFF;
 }
 
-main{
-  margin: 1em;
-}
 
-p{
-  font-size: 1.2em;
-  margin-top: 0.5em;
-  margin-left: 0.5em;
-  text-align: left;
-  line-height: 130%;
-  font-family: 'Mosk Semi-Bold 600';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Mosk Semi-Bold 600'), url('Mosk Semi-Bold 600.woff') format('woff');
-  color: #C9EAFF;
-}
-
-button{
+#continue{
   font-size: 2em;
   background-color: #45DCFF;
   padding: 12px 20px;
   border: none;
   border-radius: 20px;
-  font-family: 'Mosk Semi-Bold 600';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Mosk Semi-Bold 600'), url('Mosk Semi-Bold 600.woff') format('woff');
+  font-family: 'Roboto', sans-serif;
   color: #26153D;
   text-align: center;
+  text-decoration: none;
 }
 
-button:hover{
+#continue:hover{
   background-color: #26153D;
   color: #45DCFF;
 }
@@ -75,7 +49,7 @@ button:hover{
 .container{
   display: flex;
   width: 80%;
-  height: 80%;
+  height: 40%;
   background: #182145;
   border: 20px;
   border-style: solid;
@@ -86,17 +60,87 @@ button:hover{
   flex-direction: column;
   align-content: center;
   align-items: center;
-  font-family: 'Mosk Semi-Bold 600';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Mosk Semi-Bold 600'), url('Mosk Semi-Bold 600.woff') format('woff');
+  font-family: 'Roboto', sans-serif;
   color: #C9EAFF;
 }
 
 img{
-  margin: 1.5%;
-  text-align: right;
+  margin: 5%;
   height: 200px;
+}
+
+.elves{
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) and (orientation:portrait){
+  body {
+   height: 100vw;
+   -webkit-transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   -o-transform: rotate(90deg);
+   -ms-transform: rotate(90deg);
+   transform: rotate(90deg);
+   background-image: url("../images/elements/background_web.png") 0 0 repeat;
+  }
+  img{
+    margin: 5%;
+    height: 130px;
+  }
+  #continue{
+    font-size: 1.5em;
+    background-color: #45DCFF;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #26153D;
+    text-align: center;
+  }
+  h1{
+    font-size: 3.5em;
+    margin-top: 0.2em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #C9EAFF;
+  }
+}
+
+/* the background isn't rotating yet :( */
+  @media (max-width: 500px) and (orientation:portrait){
+    body {
+     height: 100vw;
+     -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+     -o-transform: rotate(90deg);
+     -ms-transform: rotate(90deg);
+     transform: rotate(90deg);
+     background-image: url("../images/elements/background_web.png") 0 0 repeat;
+    }
+    img{
+      margin: 5%;
+      height: 100px;
+    }
+    #continue{
+      font-size: 1em;
+      background-color: #45DCFF;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 20px;
+      font-family: 'Roboto', sans-serif;
+      color: #26153D;
+      text-align: center;
+    }
+    h1{
+      font-size: 2.5em;
+      margin-top: 0.2em;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      color: #C9EAFF;
+    }
 }
 
 /* /code for keeping footer at the bottom of the page// */
@@ -109,9 +153,9 @@ html, body {
   min-height: 100%;
   margin-bottom: -50px;
 } */
-/* .footer, .push{
+.footer, .push{
   height: 50px;
-} */
+}
 /* .logo {
   height: 1em;
   width: 1em;
