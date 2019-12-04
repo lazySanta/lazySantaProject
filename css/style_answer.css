@@ -20,6 +20,8 @@ body{
   z-index: -1;
 }
 
+/* text parts: */
+
 h1{
   font-size: 5em;
   margin-top: 0.2em;
@@ -28,8 +30,35 @@ h1{
   color: #C9EAFF;
 }
 
+p{
+  font-size: 1.3em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  text-align: left;
+  line-height: 130%;
+  font-family: 'Roboto', sans-serif;
+  color: #C9EAFF;
+}
 
-#continue{
+#quiz{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  text-align: left;
+  line-height: 130%;
+  font-family: 'Roboto', sans-serif;
+  color: #C9EAFF;
+}
+
+.answers{
+  display: flex;
+  flex-direction: column;
+}
+
+#continue, .team, button {
   font-size: 2em;
   background-color: #45DCFF;
   padding: 12px 20px;
@@ -41,10 +70,35 @@ h1{
   text-decoration: none;
 }
 
-#continue:hover{
+#continue:hover, .team:hover, button:hover {
   background-color: #26153D;
   color: #45DCFF;
 }
+
+/* image parts: */
+
+#sleeping_santa{
+  margin: 0.02%;
+  height: 170px;
+  opacity: 1;
+}
+
+#santa_cebrating{
+  margin: 2%;
+  height: 270px;
+}
+
+#evil{
+  margin: 5%;
+  height: 300px;
+}
+
+.elf, img{
+  margin: 5%;
+  height: 200px;
+}
+
+/* container parts: */
 
 .container{
   display: flex;
@@ -64,16 +118,47 @@ h1{
   color: #C9EAFF;
 }
 
-img{
-  margin: 5%;
-  height: 200px;
+.container_quiz{
+  display: flex;
+  width: 80%;
+  height: 60%;
+  background: #182145;
+  border: 20px;
+  border-style: solid;
+  border-color: #26153D;
+  border-radius: 10px;
+  padding: 0px 20px 20px 20px;
+  margin: 2%;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  color: #C9EAFF;
 }
 
-.elves{
+.santa_container{
+  display: flex;
+  width: 80%;
+  height: 15%;
+  background-color: rgba(0,0,0,.0);
+  margin: auto;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.elves, .celebration {
   display: flex;
   width: 80%;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.grinch{
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 @media (max-width: 800px) and (orientation:portrait){
@@ -86,27 +171,41 @@ img{
    transform: rotate(90deg);
    background-image: url("../images/elements/background_web.png") 0 0 repeat;
   }
-  img{
-    margin: 5%;
-    height: 130px;
-  }
-  #continue{
-    font-size: 1.5em;
-    background-color: #45DCFF;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 20px;
-    font-family: 'Roboto', sans-serif;
-    color: #26153D;
-    text-align: center;
-  }
+
   h1{
     font-size: 3.5em;
     margin-top: 0.2em;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    color: #C9EAFF;
   }
+
+  p{
+    font-size: 1em;
+  }
+
+  #quiz{
+    font-size: 1.2em;
+    margin-top: 0.3em;
+    margin-left: 0.3em;
+  }
+
+  #continue, .team, button {
+    font-size: 1.5em;
+  }
+
+  .elf, img {
+    margin: 5%;
+    height: 130px;
+  }
+
+  #evil{
+    margin: 5%;
+    height: 230px;
+  }
+
+  #santa_cebrating{
+    margin: 2%;
+    height: 150px;
+  }
+
 }
 
 /* the background isn't rotating yet :( */
@@ -120,52 +219,40 @@ img{
      transform: rotate(90deg);
      background-image: url("../images/elements/background_web.png") 0 0 repeat;
     }
-    img{
-      margin: 5%;
-      height: 100px;
-    }
-    #continue{
-      font-size: 1em;
-      background-color: #45DCFF;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 20px;
-      font-family: 'Roboto', sans-serif;
-      color: #26153D;
-      text-align: center;
-    }
+
     h1{
       font-size: 2.5em;
       margin-top: 0.2em;
-      text-align: center;
-      font-family: 'Roboto', sans-serif;
-      color: #C9EAFF;
     }
-}
 
-/* /code for keeping footer at the bottom of the page// */
-/*
-html, body {
-  height: 100%;
-  margin: 0;
-}
-.wrapper{
-  min-height: 100%;
-  margin-bottom: -50px;
-} */
-.footer, .push{
-  height: 50px;
-}
-/* .logo {
-  height: 1em;
-  width: 1em;
-}
-footer{
-  font-size: 1em;
-  text-align: right;
-} */
+    p{
+      font-size: 0.9em;
+    }
 
-/* #data{
-  color: #FE938C;
-  text-transform: capitalize;
-} */
+    #quiz{
+      font-size: 0.9em;
+      margin-top: 0.2em;
+      margin-left: 0.2em;
+
+    }
+
+    #continue, .team, button {
+      font-size: 1em;
+    }
+
+    .elf, img {
+      margin: 5%;
+      height: 110px;
+    }
+
+    #evil{
+      margin: 5%;
+      height: 200px;
+    }
+
+    #santa_cebrating{
+      margin: 2%;
+      height: 120px;
+    }
+
+}
