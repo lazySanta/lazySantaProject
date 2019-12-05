@@ -135,7 +135,7 @@ function checkCollisions(){
       state.presents.x > state.santa.x-190)
       {console.log("present caught");
       mySound.play();
-      setTimeout(function() { delayed(); }, 1000);
+      setTimeout(function() { delayed(); }, 800);
 
       function delayed () {window.location.assign(`q${state.question}.html`)}
   } else if (state.presents.y > canvas.height) {
