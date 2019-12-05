@@ -2,34 +2,22 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body {
-    position: relative;
-    overflow: hidden;
-    /* position: absolute; */
-    width: 100%;
-    height: 1000px;
-}
-body:before  {
-    content: '';
-    background: url("../images/elements/background_web.png") 0 0 no-repeat;
-    background-size: 100%;
-     transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    position: absolute;
-     background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    z-index: -1;
-    width: 200%;
-    height: 200%;
-    top: -50%;
-    left: -50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: baseline;
-    margin: auto;
+body{
+  display: flex;
+  background-image: url("../images/elements/background_web.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  left: 0;
+  will-change: transform;
+  z-index: -1;
 }
 
 /* text parts: */
@@ -126,7 +114,7 @@ nav {
   height: 170px;
 }
 
-#sleeping_santa, #sled_with_grinch_right{
+#sleeping_santa{
   margin: 0.02%;
   height: 170px;
   opacity: 1;
@@ -149,30 +137,6 @@ nav {
 
 /* container parts: */
 
-.container_body{
-  display: flex;
-  width: auto;
-  height: auto;
-  background-color: rgba(0,0,0,.0);
-  margin: auto;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-}
-
-.container_story{
-  display: flex;
-  width: auto;
-  height: auto;
-  background-color: rgba(0,0,0,.0);
-  margin: auto;
-  flex-direction: column;
-  justify-content: space-around;
-  align-content: space-between;
-  align-items: center;
-}
-
 .container{
   display: flex;
   width: 80%;
@@ -194,7 +158,7 @@ nav {
 .container_quiz{
   display: flex;
   width: 80%;
-  height: 50%;
+  height: 60%;
   background: #182145;
   border: 20px;
   border-style: solid;
@@ -222,18 +186,29 @@ nav {
 .small{
   display: flex;
   width: 15%;
-  height: 40%;
+  height: 100%;
   background: #182145;
   border: 20px;
   border-style: solid;
   border-color: #26153D;
   border-radius: 10px;
-  padding: 10px 10px 0px 10px;
+  padding: 10px 10px 10px 10px;
   flex-direction: column;
   align-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif;
   color: #C9EAFF;
+}
+
+.santa_container{
+  display: flex;
+  width: 80%;
+  height: 15%;
+  background-color: rgba(0,0,0,.0);
+  margin: auto;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .elves, .celebration {
@@ -252,18 +227,13 @@ nav {
 
 @media (max-width: 800px) and (orientation:portrait){
   body {
-   /* height: 100vw; */
+   height: 100vw;
    -webkit-transform: rotate(90deg);
    -moz-transform: rotate(90deg);
    -o-transform: rotate(90deg);
    -ms-transform: rotate(90deg);
    transform: rotate(90deg);
    background-image: url("../images/elements/background_web.png") 0 0 repeat;
-   position: relative;
-   overflow: hidden;
-   margin: auto;
-   height: auto;
-   width: auto;
   }
 
   h1{
@@ -300,18 +270,12 @@ nav {
     height: 150px;
   }
 
-  #sleeping_santa, #sled_with_grinch_right{
-    margin: 0.02%;
-    height: 150px;
-    opacity: 1;
-  }
-
 }
 
 /* the background isn't rotating yet :( */
   @media (max-width: 500px) and (orientation:portrait){
     body {
-     /* height: 100vw; */
+     height: 100vw;
      -webkit-transform: rotate(90deg);
      -moz-transform: rotate(90deg);
      -o-transform: rotate(90deg);
