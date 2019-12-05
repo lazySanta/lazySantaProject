@@ -4,38 +4,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Gloria+Hallelujah|Mountains+of+Christmas|Parisienne&display=swap" rel="stylesheet">
-    <title>Web Santa</title>
+    <link rel="stylesheet" type="text/css" href="css/style_answer.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+    <title>Lazy Santa</title>
 
   </head>
     <body>
 
-
-      <nav>
-        <a class="xmas_font" href="credits.html">about us</a>
-      </nav>
-
-        <h1 class="xmas_font">name of the game</h1>
+        <div class="container">
+        <!-- <h1 class="xmas_font">name of the game</h1> -->
+          <img id="game_logo" src="images/elements/game_logo.png" alt="game logo">
 
           <!-- submit button to another page => Strat Game! + players name-->
             <form action="story.html" method="get">
               <input type="text" name="player_name" placeholder="Name"/>
-              <input type="submit" value="PLAY!" />
+              <input class="play" type="submit" value="PLAY!" />
             </form>
 
 
-        <p class="xmas_font"> help lazy santa get back his presence from the mean grinch STEPH!!<p>
-
+          <p class="xmas_font">Please help Santa get back his presents from the evil Grinch!!<p>
+        </div>
 <!-- countdown to xmas -->
-          <div>
-            <div id="clockdiv" class="xmas_font"></div>
+        <div class="container_index">
+          <div class="small">
+
+            <div class="clock">
+              <div id="clockdiv" class="xmas_font"></div>
+            </div><br><br>
+
+            <nav>
+              <a class="play" href="credits.html">Meet the team</a>
+              <!-- <a class="xmas_font" href="credits.html">Meet the team</a> -->
+            </nav>
+
           </div>
 
-      
+          <img id="sleeping_santa" src="images/elements/santa_sleeping.png" alt="santa sleeping">
+
+          </div>
+
 
       <script src="javascript/clock.js"></script>
-
 
     </body>
 </html>
