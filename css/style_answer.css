@@ -114,7 +114,7 @@ nav {
   height: 170px;
 }
 
-#sleeping_santa{
+#sleeping_santa, #sled_with_grinch_right{
   margin: 0.02%;
   height: 170px;
   opacity: 1;
@@ -135,6 +135,12 @@ nav {
   height: 200px;
 }
 
+#credit_elves{
+  margin: 2%;
+  height: 200px;
+  opacity: 1;
+}
+
 /* container parts: */
 
 .container{
@@ -153,6 +159,28 @@ nav {
   align-items: center;
   font-family: 'Roboto', sans-serif;
   color: #C9EAFF;
+}
+
+.container_story{
+  display: flex;
+  width: 80%;
+  height: auto;
+  background-color: rgba(0,0,0,.0);
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-between;
+  align-items: center;
+}
+
+.container_team{
+  display: flex;
+  width: 80%;
+  background-color: rgba(0,0,0,.0);
+  margin: -5%;
+  align-content: center;
+  justify-content: center;
+
 }
 
 .container_quiz{
@@ -227,7 +255,7 @@ nav {
 
 @media (max-width: 800px) and (orientation:portrait){
   body {
-   height: 100vw;
+   height: auto;
    -webkit-transform: rotate(90deg);
    -moz-transform: rotate(90deg);
    -o-transform: rotate(90deg);
@@ -265,7 +293,7 @@ nav {
     height: 230px;
   }
 
-  #santa_cebrating{
+  #santa_celebrating{
     margin: 2%;
     height: 150px;
   }
