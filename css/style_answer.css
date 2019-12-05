@@ -30,6 +30,15 @@ h1{
   color: #C9EAFF;
 }
 
+h3{
+  font-size: 2em;
+  margin-top: 0.2em;
+  line-height: 130%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #C9EAFF;
+}
+
 p{
   font-size: 1.3em;
   margin-top: 0.5em;
@@ -58,6 +67,8 @@ p{
   flex-direction: column;
 }
 
+/* button parts: */
+
 #continue, .team, button {
   font-size: 2em;
   background-color: #45DCFF;
@@ -70,12 +81,38 @@ p{
   text-decoration: none;
 }
 
-#continue:hover, .team:hover, button:hover {
+.play {
+  font-size: 1em;
+  background-color: #45DCFF;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #26153D;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  height: 30px;
+  font-family: 'Roboto', sans-serif;
+  color: #26153D;
+  text-align: center;
+  text-decoration: none;
+}
+
+#continue:hover, .team:hover, button:hover, .play:hover , nav:hover {
   background-color: #26153D;
   color: #45DCFF;
 }
 
 /* image parts: */
+
+#game_logo{
+  margin: 2%;
+  height: 170px;
+}
 
 #sleeping_santa{
   margin: 0.02%;
@@ -83,7 +120,7 @@ p{
   opacity: 1;
 }
 
-#santa_cebrating{
+#santa_celebrating{
   margin: 2%;
   height: 270px;
 }
@@ -129,6 +166,33 @@ p{
   border-radius: 10px;
   padding: 0px 20px 20px 20px;
   margin: 2%;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  color: #C9EAFF;
+}
+
+.container_index{
+  display: flex;
+  width: 86%;
+  height: 40%;
+  background-color: rgba(0,0,0,.0);
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.small{
+  display: flex;
+  width: 15%;
+  height: 100%;
+  background: #182145;
+  border: 20px;
+  border-style: solid;
+  border-color: #26153D;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
   flex-direction: column;
   align-content: center;
   align-items: center;
